@@ -1,0 +1,26 @@
+From 2eb4bd2285bf31d9dcc5cc120eafb84979f07aa1 Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Fri, 29 Feb 2008 19:00:31 +0200
+Subject: [PATCH] Makefile.in: add DESTDIR to install
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
+ Makefile.in |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/Makefile.in b/Makefile.in
+index 43cf12d..4bb02ee 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -26,7 +26,7 @@ srcdir		 = @srcdir@
+ # VPATH		 = @srcdir@
+ CC	 = @CC@
+ PROG	 = integrit
+-SBINDIR	 = @sbindir@
++SBINDIR	 = $(DESTDIR)@sbindir@
+ INSTALL	 = @INSTALL@
+ OBJ	 = @OBJ@
+ ILIBOBJ	 = @ILIBOBJ@
+-- 
+1.5.3.8
+

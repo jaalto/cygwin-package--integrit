@@ -1,0 +1,7 @@
+sdesc: "File integrity checker, like Tripware"
+ldesc: "A simple yet secure alternative to products like tripwire. It has a
+small memory footprint, uses up-to-date cryptographic algorithms, and
+has features that make sense (like including the MD5 checksum of newly
+generated databases in the report."
+category: Security
+requires: cygwin
